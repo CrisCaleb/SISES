@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Estudiantes - Registrar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <h1 class="logo">🎓 Sistema de Estudiantes</h1>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="estudiantes.html">Estudiantes</a></li>
+                    <li><a href="registrar.html" class="active">Registrar</a></li>
+                    <li><a href="informacion.html">Información</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="page-title">Registro de estudiante</h2>
+
+        <div id="mensajeExito" class="alert alert-success" hidden></div>
+
+        <form id="formRegistro" class="form" novalidate>
+            <div class="form-group">
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. María">
+                <small class="error-msg"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="apellido">Apellido *</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ej. Gómez">
+                <small class="error-msg"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="carrera">Carrera *</label>
+                <select id="carrera" name="carrera">
+                    <option value="">-- Selecciona una carrera --</option>
+                    <option>Ingeniería de Sistemas</option>
+                    <option>Ingeniería Civil</option>
+                    <option>Medicina</option>
+                    <option>Derecho</option>
+                    <option>Arquitectura</option>
+                    <option>Administración de Empresas</option>
+                </select>
+                <small class="error-msg"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo electrónico *</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+                <small class="error-msg"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="telefono">Teléfono *</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ej. 71234567">
+                <small class="error-msg"></small>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Registrar estudiante</button>
+                <button type="reset" class="btn btn-secondary">Limpiar</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Sistema de Estudiantes — Proyecto universitario</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

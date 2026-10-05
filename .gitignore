@@ -1,0 +1,39 @@
+# Archivos de sistema Windows
+Thumbs.db
+desktop.ini
+NTUSER.DAT
+ntuser.dat.LOG1
+ntuser.dat.LOG2
+ntuser.ini
+
+# Carpetas de usuario
+AppData/
+OneDrive/
+Documents/
+Downloads/
+Videos/
+Music/
+Pictures/
+Contacts/
+Favorites/
+Links/
+"Saved Games"/
+Searches/
+
+# Archivos de configuración personal
+.gitconfig
+.bash_history
+.viminfo
+.lesshst
+
+# Carpetas de desarrollo (excepto las del proyecto)
+.vscode/
+.codeium/
+.claude/
+.copilot/
+.qodo/
+
+# Archivos temporales
+*.tmp
+*.log
+*.swp
